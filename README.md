@@ -12,7 +12,9 @@ We include both standard and 'size' verilog files that can be built in Xilinx's 
 We also include the Jupyter notebook we used to generate all the figures in the manuscript.
 
 python version: 3.9.13
+
 FPGA: Xilinx Zynq Ultrascale+ RFSoC 4$\times$2 (XCZU48DR-2FFVG1517E)
+
 Vivado version: 2023.2 Enterprise (enterprise required for this FPGA)
 
 All of the code we present here is to aid readers of our manuscript in reproducing our results, and is presented as-is. There are several steps missing in generating real FPGA projects, but the Verilog code is the most important aspect to reproducing our work. We cannot guarantee that any other versions or brands of software will compile the Verilog code into the exact same form that we witnessed. The archived zip files from any of our Ising machine projects are $> 26$ MB and Github only allows up to 25 MB submissions, so we unfortunately cannot provide any here.
