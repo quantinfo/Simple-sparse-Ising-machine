@@ -1,7 +1,7 @@
 # Building and running multipliers:
 There are various types of files included here. For the majority of the multipliers, only the Verilog code is given. The code is well-commented, so it is clear what Xilinx Intellectual Property (IP) blocks need to be created by the user.
 
-We include an example constraints (XDC) file that worked for us, although not all of the constraints in it are relevant. This is just a working example that we did not touch once things worked as expected.
+We include an example constraints (XDC) file. 
 
 Unfortunately, Github does not allow file uploads larger than 25 MB, and the smallest archived Vivado project is just over that limit (even with the minimum number of included files).
 
