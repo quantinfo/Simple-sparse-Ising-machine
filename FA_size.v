@@ -9,10 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: Updates the input PBits of Full Adder in Hot (I=+/-1 results in random value) 
-//               and Cold (Heaviside) modes. Measure during cold period using rising edge of slow_clk.
-//               slow_clk is to slow for ILA, so put fast_clk as ILA input clock and use the rising 
-//               edge of slow_clk as a capture condition.
+// Description: Updates the input PBits of Full Adder.
 // Dependencies: 
 // 
 // Revision:
@@ -90,10 +87,10 @@ end
 // Instantiate PLL 
 clk_wiz_0 myPLL(
     // Clock out ports
-    .clk_out1(sample_clk),   // 125 MHz 0 deg
-    .clk_out2(pbA_clk),  // 125 MHz 90 deg
-    .clk_out3(pbB_clk),  // 125 MHz 180.00 deg
-    .clk_out4(pbC_clk),   // 125 MHz 270. deg
+    .clk_out1(sample_clk),   // 350 MHz 0 deg
+    .clk_out2(pbA_clk),  // 350 MHz 90 deg
+    .clk_out3(pbB_clk),  // 350 MHz 180.00 deg
+    .clk_out4(pbC_clk),   // 350 MHz 270. deg
    // Clock in ports
     .clk_in1_p(SYS_CLK_100M_P),.clk_in1_n(SYS_CLK_100M_N)      // input clk_in1, 100 MHz pair
 );
