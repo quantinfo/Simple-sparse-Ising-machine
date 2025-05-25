@@ -9,10 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: Updates the input PBits of Full Adder in Hot (I=+/-1 results in random value) 
-//               and Cold (Heaviside) modes. Measure during cold period using rising edge of slow_clk.
-//               slow_clk is to slow for ILA, so put fast_clk as ILA input clock and use the rising 
-//               edge of slow_clk as a capture condition.
+// Description: Updates the input PBits of Full Adder
 // Dependencies: 
 // 
 // Revision:
