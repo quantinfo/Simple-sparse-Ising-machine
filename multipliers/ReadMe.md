@@ -1,7 +1,9 @@
 # Building and running multipliers:
 There are various types of files included here. For the majority of the multipliers, only the Verilog code is given. The code is well-commented, so it is clear what Xilinx Intellectual Property (IP) blocks need to be created by the user.
 
-We include an example constraints file that worked for us, although not all of the constraints in it are relevant. This is just a working example that we did not touch once things worked as expected.
+We include an example constraints (XDC) file that worked for us, although not all of the constraints in it are relevant. This is just a working example that we did not touch once things worked as expected.
+
+Unfortunately, Github does not allow file uploads larger than 25 MB, and the smallest archived Vivado project is just over that limit (even with the minimum number of included files).
 
 ## Auto-generation code in python:
 **gen_sparse_j_h_verilog.py** has two main functions, each taking as input the size of the factors and the maximum number of nearest neighbors (minimum of 5). The function J_mult builds the weight matrix J, the bias vector h, and returns them along with several parameters that indicate how the multiplier has been structured. The function I_table also builds J and h, but returns the $I_i$ LUT for each P-Bit in the multiplier. Both functions return the size of the multiplier (total number of P-Bits), the zero-clamped indices (third input to Full adders that are nominally Half adders), and the output indices (the indices of product bits). In the structure of the multipliers, the P-Bits indexed $k-1$ through 0 are the most significant bit (MSB) to the least significant bit (LSB) of the first factor, and P-Bits indexed $2k-1$ through $k$ are the MSB through the LSB of the second factor. 
