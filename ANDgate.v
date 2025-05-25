@@ -9,7 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: Updates inputs A and B (m[0:1]) of the AND gate with output C clamped to 0
 // 
 // Dependencies: 
 // 
@@ -65,9 +65,9 @@ end
 // Instantiate PLL 
 clk_wiz_0 myPLL(
     // Clock out ports
-    .clk_out1(sample_clk),     // output 120 MHz 0 deg
-    .clk_out2(color0_clk),     // output 120 MHz, 60 deg
-    .clk_out3(color1_clk),   // output 120 MHz, 120 deg
+	.clk_out1(sample_clk),     // output 400 MHz 0 deg
+	.clk_out2(color0_clk),     // output 400 MHz, 120 deg
+	.clk_out3(color1_clk),   // output 400 MHz, 240 deg
    // Clock in ports
     .clk_in1_p(SYS_CLK_100M_P),.clk_in1_n(SYS_CLK_100M_N)
 );
