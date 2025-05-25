@@ -13,7 +13,7 @@ We also include the Jupyter notebook we used to generate all the figures in the 
 
 python version: 3.9.13
 
-FPGA: Xilinx Zynq Ultrascale+ RFSoC 4$\times$2 (XCZU48DR-2FFVG1517E)
+FPGA: Xilinx Zynq Ultrascale+ RFSoC 4x2 (XCZU48DR-2FFVG1517E)
 
 Vivado version: 2023.2 Enterprise (enterprise required for this FPGA)
 
