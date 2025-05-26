@@ -1,5 +1,5 @@
 # Simple-sparse-Ising-machine
-Python and verilog code related to the article, "An improved update rule for probabilistic computers."
+Python and verilog code related to the article, "An improved update rule for probabilistic computers." (https://arxiv.org/abs/2504.00818)
 
 The related data can be found at Figshare at https://figshare.com/articles/dataset/All_project_data/29145572
 
